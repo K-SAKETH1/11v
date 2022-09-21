@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Saketh-Bill Calculator</title>
+    <!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <h1 class="head">Split And Calculate Your Bill's</h1>
+<section class="container">
+    <div class="wrapper">
+  <div class="topContainer">
+    <div class="label">Bill Amount</div>
+    <div class="input">
+        
+            <input type="text"
+               id="billAmount"
+               onkeyup="calculateBill()"
+               placeholder="₹0.00">
+    </div>
+    <div class="tipLabel"> Tip Percentage </div>
+    <div class="tipInput">
+        <input type="text"
+        id="tipInput"
+        onkeyup="calculateBill()"
+        placeholder="%10">  
+    </div>
+  </div>
+ <div class="bottomContainer">
+  <div class="people">
+    <div class="noOfPeopleLabel">No Of People</div>
+    <span class="splitter">
+        <button id="noOfPeople" onclick="increasePeople()">
+            <span>+</span>
+        </button>
+    </span>
+    <span id="noOfPersons">1</span>
+    <span class="decrease">
+        <button id="decrease" onclick="decreasePeople()">
+          <span>-</span>
+        </button>
+    </span>
+  </div>
+      <div class="totalAmount">
+        <div class="totalLabel">Total Amount</div>
+         <h1 id="totalAmount">₹0.00</h1>
+      </div>
+ </div>
+</div>
+</section>
+   <h4>© Kusuma Saketh</h4>
+    <script src="index.js"></script>
+</body>
+</html>
