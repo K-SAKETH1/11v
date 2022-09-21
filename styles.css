@@ -9,7 +9,15 @@
 body{
     background-color: #B1B2FF;
     font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }  
+html{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
 input{
     width: 100%;
     border-radius: 6px;
@@ -99,7 +107,7 @@ h4{
 @media screen and (min-width:300px) and (max-width:950px) {
     #wrapper{
         position: static;
-        transform: translate(12%,0%);
+        transform: translate(8%,0%);
         padding: 5%;
         width: 420px;
         height: 470px;
@@ -107,7 +115,8 @@ h4{
     #copyRight{
         position: static;
         transform: translate(0%,0%);
-        padding: 5%;
+        bottom: 0%;
+        padding: 20% 5% 0%;
     }
     #billAmount,#tipInput{
         background-color: #A084CA;
