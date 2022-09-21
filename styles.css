@@ -17,6 +17,9 @@ input{
     height: 30px;
     outline: none;
     padding: 2%;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFf;
+    font-size: 1rem;
 }
 h1{
     color: #A460ED;
@@ -30,6 +33,7 @@ h4{
     color: #FFFFFf;
     font-family: 'Alegreya Sans SC', sans-serif;
     letter-spacing: 2px;
+
 }
 /* Classes */
 .head{
